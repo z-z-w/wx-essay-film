@@ -1,0 +1,16 @@
+<view class='container'>
+  <image class='head-image' src='{{isPlayingMusic ? post.music.coverImg : post.headImgSrc}}'></image>
+  <image class='audio' catchtap='onMusicTap' src='{{isPlayingMusic ? "/images/music/music-stop.png" : "/images/music/music-start.png"}}'></image>
+  <view class='author-date-container'>
+    <view class='author-date'>
+      <image class='avatar' src='{{post.avatar}}'></image>
+      <text class='author'>{{post.author}}</text>
+      <text class='const-text'>发表于</text>
+      <text class='date'>{{post.dateTime}}</text>
+    </view>
+    <text class='title'>{{post.title}}</text>
+    <image class='collection'catchtap='onCollectionTap' src="{{collected ? '/images/icon/collection.png' : '/images/icon/collection-anti.png'}}"></image>
+    <image class='share' catchtap='onShareTap' src='/images/icon/share.png'></image> 
+  </view>
+  <text class='detail'>{{post.detail}}</text>
+</view>

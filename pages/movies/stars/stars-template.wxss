@@ -1,0 +1,21 @@
+.stars-wrapper{
+  display: flex;
+  flex-direction: row;
+  height: 21rpx;
+}
+.stars{
+  display: flex;
+  flex-direction: row;
+  line-height: 21rpx;
+  margin-right: 15rpx;
+}
+.stars image{
+  width: 17rpx;
+  height: 17rpx;
+  padding-right: 3rpx;
+}
+.score{
+  font-size: 24rpx;
+  line-height: 21rpx;
+  color: #1f3463;
+}
